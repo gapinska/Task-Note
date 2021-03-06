@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <UserSecretsId>d7a6a705-b6b2-4459-bbbd-1ad330fa9733</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Persistence\Migrations\20200729215350_Init.cs" />
+    <Compile Remove="Persistence\Migrations\20200729215350_Init.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200803175455_BoardHasUserId.cs" />
+    <Compile Remove="Persistence\Migrations\20200803175455_BoardHasUserId.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200803175525_BoardHasUserId.cs" />
+    <Compile Remove="Persistence\Migrations\20200803175525_BoardHasUserId.Designer.cs" />
+    <Compile Remove="Persistence\Migrations\20200803180615_RelationsCorrection.cs" />
+    <Compile Remove="Persistence\Migrations\20200803180615_RelationsCorrection.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Persistence\UserSeedData.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Persistence\UserSeedData.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="3.1.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>

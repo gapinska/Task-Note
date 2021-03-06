@@ -1,0 +1,9 @@
+namespace Application.Models.Dtos
+{
+    public class BoardForListDto
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+    }
+}

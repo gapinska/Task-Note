@@ -1,0 +1,25 @@
+[
+    {
+      "Username": "Dorothy",
+      "FullName": "Dorothy Smith",
+      "DateOfBirth": "1994-02-21",
+      "Password": "P@ssword123",
+      "Email": "Dorothy@mail.com",
+      "PhoneNumber": "321321321",
+      "City": "Leicester",
+      "Country": "United Kingdom",
+      "Bio": "Hi"
+    },
+    {
+      "Username": "Luke",
+      "FullName": "Luke Davis",
+      "DateOfBirth": "2000-02-24",
+      "Password": "P@ssword123",
+      "Email": "Luke@mail.com",
+      "PhoneNumber": "987987987",
+      "City": "Radom",
+      "Country": "Poland",
+      "Bio": "Hello"
+    }
+]
+    
