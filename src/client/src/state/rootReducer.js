@@ -4,6 +4,7 @@ import loginReducer from '../Components/Login/state/loginReducer'
 import boardsReducer from '../Components/Boards/state/boardsReducer'
 import userReducer from '../Containers/User/userReducer'
 import boardReducer from '../Components/Boards/Board/boardReducer'
+import questsReducer from '../Components/Boards/Quests/questsReducer'
 import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
@@ -17,7 +18,8 @@ const rootReducer = combineReducers({
 	login: loginReducer,
 	user: userReducer,
 	boards: boardsReducer,
-	board: boardReducer
+	board: boardReducer,
+	quests: questsReducer
 })
 
 export default persistReducer(persistConfig, rootReducer)
